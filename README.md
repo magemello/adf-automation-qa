@@ -12,8 +12,10 @@ Automate the following scenario using protractor:
 2. Change Provider to ECM
 3. Click Apply
 4. Navigate to http://qaexercise.envalfresco.com/login
+    - Insert Username and Password
     - Username : guest@example.com
     - Password : Password
+    - Click Login
 5. Navigate to http://qaexercise.envalfresco.com/files
 6. Click on 'create new folder' icon.
 7. New folder dialog is displayed.
