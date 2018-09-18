@@ -8,10 +8,10 @@ Fork this GitHub repository and push the produced code in your fork repository.
 
 Automate the following scenario using protractor:
 
-1.Access to http://qaexercise.envalfresco.com/settings
-2.Change Provider to ECM
-3.Click Apply
-4.Navigate to http://qaexercise.envalfresco.com/login
+1. Access to http://qaexercise.envalfresco.com/settings
+2. Change Provider to ECM
+3. Click Apply
+4. Navigate to http://qaexercise.envalfresco.com/login
     - Username : guest@example.com
     - Password : Password
 5. Navigate to http://qaexercise.envalfresco.com/files
