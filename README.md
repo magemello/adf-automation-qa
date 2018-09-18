@@ -29,7 +29,7 @@ In the README file of the repository we want to see also the following sections:
 1. ***Description*** Describes of how to run the automation test
 2. ***Explanation*** Describes the choice made in the solution
 
-You can send the link to you fork at mario.romano@alfresco.com.
+You can send the link to your fork at mario.romano@alfresco.com.
 
 ### Some info about protractor
 * https://github.com/angular/protractor
