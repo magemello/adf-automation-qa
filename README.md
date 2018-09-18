@@ -7,23 +7,27 @@ Do you love automation testing and you know how to solve the following exercise?
 Fork this GitHub repository and push the produced code in your fork repository. 
 
 Automate the following scenario using protractor:
-1. Access to http://qaexercise.envalfresco.com/
+
+1.Access to http://qaexercise.envalfresco.com/settings
+2.Change Provider to ECM
+3.Click Apply
+4.Navigate to http://qaexercise.envalfresco.com/login
     - Username : guest@example.com
     - Password : Password
-2. Navigate to http://qaexercise.envalfresco.com/files
-Click on 'create new folder' icon.
-3. New folder dialog is displayed.
-4. Introduce letter 'a'.
-5. Letter has been added.
-6. Click on 'Create' button.
-7. The dialog is closed. Folder with name 'a' is created in the current folder.
-8. Click on 'create new folder' icon.
-9. New folder dialog is displayed.
-10. Introduce letter 'a'.
-11. Letter has been added.
-12. Click on 'Create' button.
-13. The dialog is not closed.
-14. The message "There's already a folder with this name. Try a different name" is displayed.
+5. Navigate to http://qaexercise.envalfresco.com/files
+6. Click on 'create new folder' icon.
+7. New folder dialog is displayed.
+8. Introduce letter 'a'.
+9. Letter has been added.
+10. Click on 'Create' button.
+11. The dialog is closed. Folder with name 'a' is created in the current folder.
+12. Click on 'create new folder' icon.
+13. New folder dialog is displayed.
+14. Introduce letter 'a'.
+15. Letter has been added.
+16. Click on 'Create' button.
+17. The dialog is not closed.
+18. The message "There's already a folder with this name. Try a different name" is displayed.
 
 In the README file of the repository we want to see also the following sections:
 1. ***Description*** Describes of how to run the automation test
