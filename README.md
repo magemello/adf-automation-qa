@@ -22,7 +22,7 @@ Automate the following scenario using protractor:
 8. Introduce your Github username (for example in my case) "magemello".
 9. Name has been added.
 10. Click on 'Create' button.
-11. The dialog is closed. Folder with name 'a' is created in the current folder.
+11. The dialog is closed. Folder with your Github username is created in the current folder.
 12. Click on 'create new folder' icon.
 13. New folder dialog is displayed.
 14. Introduce your Github username (for example in my case) "magemello".
@@ -30,8 +30,7 @@ Automate the following scenario using protractor:
 16. Click on 'Create' button.
 17. The dialog is not closed.
 18. The message "There's already a folder with this name. Try a different name" is displayed.
-18. The message "There's already a folder with this name. Try a different name" is displayed.
-19. Select the folder
+19. Select the folder with your Github username
 20. Open Options window (3 dots)
 21. Click delete
 
