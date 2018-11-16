@@ -41,6 +41,9 @@ In the README file of the repository we want to see also the following sections:
 
 You can send the link to your fork at mario.romano@alfresco.com. Feel free to attach also your cv and a link to your linkedin profile.
 
+### Starter
+The framework has already been setup in the /starter folder, please add your teest case in the spec.js file. 
+
 ### Some info about protractor
 * https://github.com/angular/protractor
 * https://blog.cloudboost.io/building-your-first-tests-for-angular5-with-protractor-a48dfc225a75
