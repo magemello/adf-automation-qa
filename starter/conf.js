@@ -9,6 +9,15 @@ exports.config = {
   framework: 'jasmine',
 
   onPrepare: () => {
+      // Add custom locator
+      by.addLocator('automationLocator', function(value, parentElement) {
+        parentElement = parentElement || document;
+        let nodes = parentElement.querySelectorAll('[data-automation-id]');
+        return Array.prototype.filter.call(nodes, function(node) {
+          return (node.getAttribute('data-automation-id') === value);
+        });
+      });
+
       // set browser size...
       browser.manage().window().setSize(1024, 800);
 
