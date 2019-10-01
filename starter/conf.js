@@ -5,7 +5,7 @@ require("babel-register")({
 });
 
 exports.config = {
-  specs: ['spec.js'],
+  specs: [ 'spec.js'],
   framework: 'jasmine',
 
   onPrepare: () => {
