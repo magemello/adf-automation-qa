@@ -49,9 +49,6 @@ describe('ADF Demo App', function() {
                                     "//button[@class='mat-icon-button']"));
   var deleteButton  = element(by.xpath("//button[@class='mat-menu-item ng-star-inserted']//span[contains(text(),'Delete')]"));
 
-  var deleteConfirmationMassage = element(by.xpath("//span[contains(text(), '" + FOLDER_NAME + " deleted')]"));
-
-
 
   it('Test', function() {
 
