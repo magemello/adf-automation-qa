@@ -1,16 +1,31 @@
-import VisitSite from './site/visitmethods/VisitSiteMethods'
-import URL from './site/urls/Url'
-import GeneralFunctionalities from './generalfunc/GeneralClick'
-import ProviderElements from './settingsfront/ProviderElements'
-import GeneralCommands from './settingsfront/General'
-import Wait from './generalfunc/WaitForElement'
 
-describe('ADF Demo App', function() {
+import SettingsSection  from './settingsfront/methods/SettingsNavigation'
+import LoginSection from './login/LoginMethods'
+import FilesSection from './files/FilesAndFoldersMethods'
+import Maximize from './generalfunc/WindowSizes'
+import Toasts from './generalfunc/Toasts'
 
+describe('ADF Demo App - automation end to end flow on folder creation and deletion', function() {
  it('should validate an UI automation flow', function() {
-    VisitSite.launchApp(URL.appURL)
-    GeneralFunctionalities.clickOnElement(ProviderElements.providerDropdown)
-    GeneralFunctionalities.clickOnChildElement(ProviderElements.PROVIDER_LIST_ID,ProviderElements.ECM_CSS,1)
-    GeneralFunctionalities.clickOnElement(GeneralCommands.apply)
+    SettingsSection.launchApplication()
+    SettingsSection.selectSettingsDropdown()
+    SettingsSection.selectECMOption()
+    SettingsSection.applySelection()
+    LoginSection.enterUserName()
+    LoginSection.enterPassword()
+    LoginSection.submitLogin()
+    Maximize.maximizeWindow()
+    FilesSection.goToFilesSection()
+    FilesSection.clickOnCreateNewFolder()
+    FilesSection.nameTheFolder()
+    FilesSection.createFolder()
+    FilesSection.clickOnCreateNewFolder()
+    FilesSection.nameTheFolder()
+    FilesSection.createFolder()
+    Toasts.validateFolderDuplicationToast()
+    FilesSection.cancelFolderCreation()
+    FilesSection.accessFolderContextMenu()
+    FilesSection.deleteFolderFromContextMenu()
+    FilesSection.assertFolderDeletion()
   });
 });

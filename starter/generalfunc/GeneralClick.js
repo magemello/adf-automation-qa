@@ -14,9 +14,15 @@ const clickOnClassNameElement = elemClass => {
     element(by.className(`${elemClass}`)).click();
 }
 
-const clickOnChildElement = (parent,child,index) => {
+const clickOnChildElementByCss = (parent,child,index) => {
     const parentIdentifier = element(by.id(`${parent}`))
     const childIdentifier = parentIdentifier.all(by.css(`${child}`)).get(`${index}`)
+    childIdentifier.click()
+}
+
+const clickOnChildElementByClass = (parent,child,index) => {
+    const parentIdentifier = element(by.id(`${parent}`))
+    const childIdentifier = parentIdentifier.all(by.className(`${child}`)).get(`${index}`)
     childIdentifier.click()
 }
 
@@ -25,5 +31,6 @@ export default {
     clickOnCSSElement,
     clickOnCSSContainingTextElement,
     clickOnClassNameElement,
-    clickOnChildElement
+    clickOnChildElementByCss,
+    clickOnChildElementByClass,
 }
