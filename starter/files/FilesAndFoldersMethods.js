@@ -37,10 +37,6 @@ const createFolder = () => {
     Click.clickOnElement(Files.createFolderID)
 }
 
-const validateToastOfFolderDuplication = () => {
-    Toasts.validateFolderDuplicationToast()
-}
-
 const cancelFolderCreation = () => {
     Click.clickOnElement(Files.cancelFolderCreationID)
 }
@@ -52,6 +48,5 @@ export default {
     clickOnCreateNewFolder,
     nameTheFolder,
     createFolder,
-    validateToastOfFolderDuplication,
     cancelFolderCreation,
 }
